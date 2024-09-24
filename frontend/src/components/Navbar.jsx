@@ -82,14 +82,14 @@ export default function Navbar() {
           <Link
             to="/"
             className="block hover:underline p-2"
-            onClick={toggleMobileMenu}
+            onClick={() => { handleChangeContentType("Movies"); toggleMobileMenu()}}
           >
             Movies
           </Link>
           <Link
             to="/"
             className="block hover:underline p-2"
-            onClick={toggleMobileMenu}
+            onClick={() => {handleChangeContentType("TV Shows"); toggleMobileMenu()}}
           >
             TV Shows
           </Link>
